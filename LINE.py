@@ -1,3 +1,4 @@
+# coding: UTF-8
 from __future__ import unicode_literals
 
 import os
@@ -52,7 +53,7 @@ def callback():
             continue
         if not isinstance(event.message, TextMessage):
             continue
-　　　　# ↓テキストのオウム返し部分
+        # ↓テキストのオウム返し部分
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text=event.message.text)
